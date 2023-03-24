@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world.cpp
+hello_world.h
+/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world.h
+
+/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world.h
+iostream
+-
+ceres/ceres.h
+-
+glog/logging.h
+-
+
+/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world_main.cpp
+hello_world.h
+/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world.h
+glog/logging.h
+-
+
