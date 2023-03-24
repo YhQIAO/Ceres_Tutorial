@@ -57,43 +57,29 @@ include CMakeFiles/ceres_hello_world_demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ceres_hello_world_demo.dir/flags.make
 
-CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.o: CMakeFiles/ceres_hello_world_demo.dir/flags.make
-CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.o: ../hello_world_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.o -c /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world_main.cpp
+CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.o: CMakeFiles/ceres_hello_world_demo.dir/flags.make
+CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.o: ../src/hello_world_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.o -c /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/src/hello_world_main.cpp
 
-CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world_main.cpp > CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.i
+CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/src/hello_world_main.cpp > CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.i
 
-CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world_main.cpp -o CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.s
-
-CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.o: CMakeFiles/ceres_hello_world_demo.dir/flags.make
-CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.o: ../hello_world.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.o -c /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world.cpp
-
-CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world.cpp > CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.i
-
-CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/hello_world.cpp -o CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.s
+CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/src/hello_world_main.cpp -o CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.s
 
 # Object files for target ceres_hello_world_demo
 ceres_hello_world_demo_OBJECTS = \
-"CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.o" \
-"CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.o"
+"CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.o"
 
 # External object files for target ceres_hello_world_demo
 ceres_hello_world_demo_EXTERNAL_OBJECTS =
 
-bin/ceres_hello_world_demo: CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.o
-bin/ceres_hello_world_demo: CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.o
+bin/ceres_hello_world_demo: CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.o
 bin/ceres_hello_world_demo: CMakeFiles/ceres_hello_world_demo.dir/build.make
+bin/ceres_hello_world_demo: lib/libhello_world_lib.so
 bin/ceres_hello_world_demo: /usr/local/lib/libceres.a
 bin/ceres_hello_world_demo: /usr/lib/x86_64-linux-gnu/libglog.so
 bin/ceres_hello_world_demo: /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2
@@ -110,7 +96,7 @@ bin/ceres_hello_world_demo: /usr/lib/x86_64-linux-gnu/liblapack.so
 bin/ceres_hello_world_demo: /usr/lib/x86_64-linux-gnu/libf77blas.so
 bin/ceres_hello_world_demo: /usr/lib/x86_64-linux-gnu/libatlas.so
 bin/ceres_hello_world_demo: CMakeFiles/ceres_hello_world_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/ceres_hello_world_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/ceres_hello_world_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ceres_hello_world_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

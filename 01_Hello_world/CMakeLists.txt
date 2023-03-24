@@ -12,11 +12,15 @@ find_package(Ceres REQUIRED)
 include_directories(${CERES_INCLUDE_DIRS})
 include_directories(.)
 
-add_executable(${PROJECT_NAME} hello_world_main.cpp hello_world.cpp)
+add_library(hello_world_lib SHARED src/hello_world.cpp)
+
+add_executable(${PROJECT_NAME} src/hello_world_main.cpp)
 
 # 定义需要的库
 # ${CERES_LIBRARIES}只有一项ceres，后面很多库都没有。。。所以需要自己定义需要链接那些库。
 # set(LIBS ${CERES_LIBRARIES} umfpack cxsparse glog gflags gomp
 #       ccolamd btf klu cholmod lapack blas camd amd pthread)
 
-target_link_libraries(${PROJECT_NAME} ${CERES_LIBRARIES})
+# 如果出现eigen头文件包含的问题，可以使用软链接
+target_link_libraries(hello_world_lib ${CERES_LIBRARIES} )
+target_link_libraries(${PROJECT_NAME} hello_world_lib )

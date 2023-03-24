@@ -76,4 +76,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ceres_hello_world_demo.dir/DependInfo.cmake"
+  "CMakeFiles/hello_world_lib.dir/DependInfo.cmake"
   )

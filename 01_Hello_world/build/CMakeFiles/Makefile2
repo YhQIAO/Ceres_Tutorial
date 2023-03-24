@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build
 
 # The main recursive "all" target.
 all: CMakeFiles/ceres_hello_world_demo.dir/all
+all: CMakeFiles/hello_world_lib.dir/all
 
 .PHONY : all
 
@@ -64,6 +65,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/ceres_hello_world_demo.dir/clean
+clean: CMakeFiles/hello_world_lib.dir/clean
 
 .PHONY : clean
 
@@ -71,15 +73,15 @@ clean: CMakeFiles/ceres_hello_world_demo.dir/clean
 # Target rules for target CMakeFiles/ceres_hello_world_demo.dir
 
 # All Build rule for target.
-CMakeFiles/ceres_hello_world_demo.dir/all:
+CMakeFiles/ceres_hello_world_demo.dir/all: CMakeFiles/hello_world_lib.dir/all
 	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/depend
 	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles --progress-num=1,2,3 "Built target ceres_hello_world_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles --progress-num=1,2 "Built target ceres_hello_world_demo"
 .PHONY : CMakeFiles/ceres_hello_world_demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ceres_hello_world_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ceres_hello_world_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles 0
 .PHONY : CMakeFiles/ceres_hello_world_demo.dir/rule
@@ -93,6 +95,33 @@ ceres_hello_world_demo: CMakeFiles/ceres_hello_world_demo.dir/rule
 CMakeFiles/ceres_hello_world_demo.dir/clean:
 	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/clean
 .PHONY : CMakeFiles/ceres_hello_world_demo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/hello_world_lib.dir
+
+# All Build rule for target.
+CMakeFiles/hello_world_lib.dir/all:
+	$(MAKE) -f CMakeFiles/hello_world_lib.dir/build.make CMakeFiles/hello_world_lib.dir/depend
+	$(MAKE) -f CMakeFiles/hello_world_lib.dir/build.make CMakeFiles/hello_world_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles --progress-num=3,4 "Built target hello_world_lib"
+.PHONY : CMakeFiles/hello_world_lib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/hello_world_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hello_world_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qyh/Desktop/Ceres_Tutorial/01_Hello_world/build/CMakeFiles 0
+.PHONY : CMakeFiles/hello_world_lib.dir/rule
+
+# Convenience name for target.
+hello_world_lib: CMakeFiles/hello_world_lib.dir/rule
+
+.PHONY : hello_world_lib
+
+# clean rule for target.
+CMakeFiles/hello_world_lib.dir/clean:
+	$(MAKE) -f CMakeFiles/hello_world_lib.dir/build.make CMakeFiles/hello_world_lib.dir/clean
+.PHONY : CMakeFiles/hello_world_lib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

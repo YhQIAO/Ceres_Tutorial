@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.o"
-  "CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.o"
+  "CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.o"
   "bin/ceres_hello_world_demo"
   "bin/ceres_hello_world_demo.pdb"
 )

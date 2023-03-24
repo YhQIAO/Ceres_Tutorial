@@ -123,59 +123,72 @@ ceres_hello_world_demo/fast:
 	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/build
 .PHONY : ceres_hello_world_demo/fast
 
-hello_world.o: hello_world.cpp.o
+#=============================================================================
+# Target rules for targets named hello_world_lib
 
-.PHONY : hello_world.o
+# Build rule for target.
+hello_world_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello_world_lib
+.PHONY : hello_world_lib
 
-# target to build an object file
-hello_world.cpp.o:
-	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.o
-.PHONY : hello_world.cpp.o
+# fast build rule for target.
+hello_world_lib/fast:
+	$(MAKE) -f CMakeFiles/hello_world_lib.dir/build.make CMakeFiles/hello_world_lib.dir/build
+.PHONY : hello_world_lib/fast
 
-hello_world.i: hello_world.cpp.i
+src/hello_world.o: src/hello_world.cpp.o
 
-.PHONY : hello_world.i
-
-# target to preprocess a source file
-hello_world.cpp.i:
-	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.i
-.PHONY : hello_world.cpp.i
-
-hello_world.s: hello_world.cpp.s
-
-.PHONY : hello_world.s
-
-# target to generate assembly for a file
-hello_world.cpp.s:
-	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/hello_world.cpp.s
-.PHONY : hello_world.cpp.s
-
-hello_world_main.o: hello_world_main.cpp.o
-
-.PHONY : hello_world_main.o
+.PHONY : src/hello_world.o
 
 # target to build an object file
-hello_world_main.cpp.o:
-	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.o
-.PHONY : hello_world_main.cpp.o
+src/hello_world.cpp.o:
+	$(MAKE) -f CMakeFiles/hello_world_lib.dir/build.make CMakeFiles/hello_world_lib.dir/src/hello_world.cpp.o
+.PHONY : src/hello_world.cpp.o
 
-hello_world_main.i: hello_world_main.cpp.i
+src/hello_world.i: src/hello_world.cpp.i
 
-.PHONY : hello_world_main.i
+.PHONY : src/hello_world.i
 
 # target to preprocess a source file
-hello_world_main.cpp.i:
-	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.i
-.PHONY : hello_world_main.cpp.i
+src/hello_world.cpp.i:
+	$(MAKE) -f CMakeFiles/hello_world_lib.dir/build.make CMakeFiles/hello_world_lib.dir/src/hello_world.cpp.i
+.PHONY : src/hello_world.cpp.i
 
-hello_world_main.s: hello_world_main.cpp.s
+src/hello_world.s: src/hello_world.cpp.s
 
-.PHONY : hello_world_main.s
+.PHONY : src/hello_world.s
 
 # target to generate assembly for a file
-hello_world_main.cpp.s:
-	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/hello_world_main.cpp.s
-.PHONY : hello_world_main.cpp.s
+src/hello_world.cpp.s:
+	$(MAKE) -f CMakeFiles/hello_world_lib.dir/build.make CMakeFiles/hello_world_lib.dir/src/hello_world.cpp.s
+.PHONY : src/hello_world.cpp.s
+
+src/hello_world_main.o: src/hello_world_main.cpp.o
+
+.PHONY : src/hello_world_main.o
+
+# target to build an object file
+src/hello_world_main.cpp.o:
+	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.o
+.PHONY : src/hello_world_main.cpp.o
+
+src/hello_world_main.i: src/hello_world_main.cpp.i
+
+.PHONY : src/hello_world_main.i
+
+# target to preprocess a source file
+src/hello_world_main.cpp.i:
+	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.i
+.PHONY : src/hello_world_main.cpp.i
+
+src/hello_world_main.s: src/hello_world_main.cpp.s
+
+.PHONY : src/hello_world_main.s
+
+# target to generate assembly for a file
+src/hello_world_main.cpp.s:
+	$(MAKE) -f CMakeFiles/ceres_hello_world_demo.dir/build.make CMakeFiles/ceres_hello_world_demo.dir/src/hello_world_main.cpp.s
+.PHONY : src/hello_world_main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +199,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ceres_hello_world_demo"
-	@echo "... hello_world.o"
-	@echo "... hello_world.i"
-	@echo "... hello_world.s"
-	@echo "... hello_world_main.o"
-	@echo "... hello_world_main.i"
-	@echo "... hello_world_main.s"
+	@echo "... hello_world_lib"
+	@echo "... src/hello_world.o"
+	@echo "... src/hello_world.i"
+	@echo "... src/hello_world.s"
+	@echo "... src/hello_world_main.o"
+	@echo "... src/hello_world_main.i"
+	@echo "... src/hello_world_main.s"
 .PHONY : help
 
 

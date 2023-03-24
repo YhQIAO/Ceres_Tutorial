@@ -347,6 +347,9 @@ ceres_hello_world_demo_SOURCE_DIR:STATIC=/home/qyh/Desktop/Ceres_Tutorial/01_Hel
 //The directory containing a CMake configuration file for gflags.
 gflags_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gflags
 
+//Dependencies for the target
+hello_world_lib_LIB_DEPENDS:STATIC=general;Ceres::ceres;
+
 
 ########################
 # INTERNAL cache entries
